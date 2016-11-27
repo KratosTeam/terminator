@@ -1,11 +1,10 @@
-<p align="center"> ![http://s9.picofile.com/file/8271934618/4_0.png](http://s9.picofile.com/file/8271934618/4_0.png)
-# [Jove V4.0](https://telegram.me/JoveTG)
+<p align="center"> ![http://s9.picofile.com/file/8273852176/4_0.png](http://s9.picofile.com/file/8273852176/4_0.png)
+# [Terminator V4.0](https://telegram.me/TerminatorTG)
 
 | Bot Name | Description | Powered By | Team name |
 |:--------|:------------|:------------|:------------|
-| Jove | Cli Anti Spam bot version 4.0 | Pouya Poorrahman | Titan Zeus |
+| Terminator | Cli Anti Spam bot version 4.0 | Rahman Rahimi | Kratos |
 
-[![https://gitter.im/PouyaPoorrahman/Jove](https://badges.gitter.im/PouyaPoorrahman/Jove.svg)](https://gitter.im/PouyaPoorrahman/Jove?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 **An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU Affero General Public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**.
 # Features
@@ -50,14 +49,14 @@
 * * *
 
 ## Commands
-Jove has several commands that are only usable at certain ranks.
+Terminator has several commands that are only usable at certain ranks.
 
 
 ## General Commands {#general_commands}
 | Command | Description |
 |:--------|:------------|
 | [#!/]id | Returns group/SuperGroup ID & more or user id in pm. |
-| [#!/]jove | Returns bot information. |
+| [#!/]terminator | Returns bot information. |
 
 
 ## Private Message Commands {#privmsg_commands}
@@ -116,7 +115,7 @@ Jove has several commands that are only usable at certain ranks.
 | [#!/]banlist | Returns group/SuperGroup banlist. | Y | Y |
 | [#!/]clean [rules<html>&#124;</html>about<html>&#124;</html>modlist<html>&#124;</html>mutelist] | Clears rules, about, modlist, or mutelist | Y | Y |
 | [#!/]del | Deletes a message by reply. | N | Y |
-| [#!/]jove | show bot version | Y | Y |
+| [#!/]terminator | show bot version | Y | Y |
 | [#!/]version | show bot info | Y | Y |
 | [#!/]res [username] | Returns users name and id by username. | Y | Y |
 | [#!/]log | Returns group logs.***In SuperGroups:*** Search for kick reasons using [#RTL<html>&#124;</html>#spam<html>&#124;</html>#lockmember] | Y | Y |
@@ -255,8 +254,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/PouyaPoorrahman/jove.git -b supergroups
-cd jove
+git clone https://github.com/KratosTeam/terminator.git -b supergroups
+cd terminator
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -265,7 +264,7 @@ chmod +x launch.sh
 To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
 ```sh
 #https://github.com/yagop/telegram-bot/wiki/Installation
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/PouyaPoorrahman/jove.git -b supergroups && cd jove && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/KratosTeam/terminator.git -b supergroups && cd terminator && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 
 * * *
@@ -277,11 +276,8 @@ After you run the bot for first time, send it `!id`. Get your ID and stop the bo
 Open ./data/config.lua and add your ID to the "sudo_users" section in the following format:
 ```
   sudo_users = {
-     218722292,
-     192727254,
-     247473926,
-     68853039,
-     0,
+     221234960,
+     255743970,
      YourID
   }
 ```
@@ -302,60 +298,26 @@ Create a realm using the `!createrealm` command.
 * * *
 
 # Special thanks to
-[@vVv_ERPO_vVv](https://telegram.me/vVv_ERPO_vVv)
+[@Tr1_FRHT_Tr1](https://telegram.me/Tr1_FRHT_Tr1)
 
-For managing [@JoveTG](https://telegram.me/JoveTG) on Telegram.
+For managing [@TerminatorTG](https://telegram.me/terminatorTG) on Telegram.
 
-[@vWv_ERPO_vWv](https://telegram.me/vWv_ERPO_vWv)
+[@Tr2_FRHT_Tr2](https://telegram.me/Tr2_FRHT_Tr2)
 
-For Write Plugins.And..
-
-[@vMv_ERPO_vMv](https://telegram.me/vMv_ERPO_vMv)
-
-[@vXv_ERPO_vXv](https://telegram.me/vXv_ERPO_vXv)
+[@Tr3_FRHT_Tr3](https://telegram.me/Tr3_FRHT_Tr3)
 
 For Managing Bot.
 
 * * *
 
-# Titan Zeus team!
+# Kratos team!
 
-The Manager Of Team: [Pouya Poorrahman](https://telegram.me/vVv_ERPO_vVv)
+The Manager Of Team: [Rahman Rahimi](https://telegram.me/Tr1_FRHT_Tr1)
 
-The Assistant Of Team: [Erfan Kiya](https://telegram.me/vWv_ERPO_vWv)
+The Manager: [Hamed Habibi](https://telegram.me/Tr2_FRHT_Tr2)
 
-The Manager: [Mostafa Ali Yari](https://telegram.me/vMv_ERPO_vMv)
-
-The Manager: [Mohamad Pahlavan](https://telegram.me/M_18_M_19)
-
-The Manager: [Omid Ghiyasvand](https://telegram.me/vOv_ERPO_vOv)
-
-The Support: [Alireaza](https://telegram.me/vAv_ERPO_vAv)
-
-The Queen: [Mahsa Nasiri](https://telegram.me/vQv_ErPo_vQv)
-
-### Our Telegram channels:
-
-Persian: [@JoveCH](https://telegram.me/jovech)
+The Support: [Fardin Shirdel](https://telegram.me/Tr3_FRHT_Tr3)
 
 ### Our Bots:
 
-Intenational Jove: [@JoveTG](https://telegram.me/joveTG)
-
-Jove 2: [@JoveTG2](https://telegram.me/joveTG2)
-
-Jove 3: [@JoveTG3](https://telegram.me/joveTG3)
-
-Jove 4: [@JoveTG4](https://telegram.me/joveTG4)
-
-Jove 5: [@JoveTG5](https://telegram.me/joveTG5)
-
-Jove 6: [@JoveTG6](https://telegram.me/joveTG6)
-
-Jove 7: [@JoveTG2](https://telegram.me/joveTG7)
-
-Jove Cli: [@JoveCli](https://telegram.me/joveCli)
-
-Jove Api: [@JoveApiBot](https://telegram.me/joveApiBot)
-
-Jove Helper: [@JoveTGBot](https://telegram.me/joveTGBot)
+Intenational Terminator: [@TerminatorTG](https://telegram.me/terminatorTG)
