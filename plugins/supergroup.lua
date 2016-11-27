@@ -1,13 +1,15 @@
 --[[
-|------------------------------------------------- |--------- ______-----------------_______---|
-|   ______   __   ______    _____     _____    __  |  _____  |  ____|  __     __    /  _____/  |
-|  |__  __| |  | |__  __|  /     \   |     \  |  | | |__   | | |____  |  |   |  |  /  /____    |
-|    |  |   |  |   |  |   /  /_\  \  |  |\  \ |  | |   /  /  |  ____| |  |   |  |  \____   /   |
-|    |  |   |  |   |  |  /  _____  \ |  | \  \|  | |  /  /_  | |____  |  |___|  |   ___/  /    |
-|    |__|   |__|   |__| /__/     \__\|__|  \_____| | |_____| |______|  \_______/  /______/     |
-|--------------------------------------------------|-------------------------------------------|
-| This Project Powered by : Pouya Poorrahman CopyRight 2016 Jove Version 4.0 Anti Spam Cli Bot |
-|----------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------|
+|   ######## ######## ########  ##     ## #### ##    ##    ###    ########  #######  ########     |
+|      ##    ##       ##     ## ###   ###  ##  ###   ##   ## ##      ##    ##     ## ##     ##    |
+|      ##    ##       ##     ## #### ####  ##  ####  ##  ##   ##     ##    ##     ## ##     ##    |
+|      ##    ######   ########  ## ### ##  ##  ## ## ## ##     ##    ##    ##     ## ########     |
+|      ##    ##       ##   ##   ##     ##  ##  ##  #### #########    ##    ##     ## ##   ##      |
+|      ##    ##       ##    ##  ##     ##  ##  ##   ### ##     ##    ##    ##     ## ##    ##     |
+|      ##    ######## ##     ## ##     ## #### ##    ## ##     ##    ##     #######  ##     ##    |
+|-------------------------------------------------------------------------------------------------|
+| This Project Powered by : Rahman Rahimi CopyRight 2016 Terminator Version 4.0 Anti Spam Cli Bot |
+|-------------------------------------------------------------------------------------------------|
 ]]
 --Begin supergrpup.lua
 --Check members #Add supergroup
@@ -789,7 +791,7 @@ end
 		end
 	end
   local settings = data[tostring(target)]['settings']
-  local text = "💠#SuperGroup #Settings💠:\n➖➖➖➖➖➖➖➖\n🔸$Bot Name >> #Jove 4.0 \n🔹$Lock Links >> #"..settings.lock_link.."\n🔸$Lock Webpage >> #"..settings.lock_webpage.."\n🔹$Lock Tag >> #"..settings.lock_tag.."\n🔸$Lock Emoji >> #"..settings.lock_emoji.."\n🔹$Lock English >> #"..settings.lock_eng.."\n🔸$Lock Badword >> #"..settings.lock_badw.."\n🔹$Lock Flood >> #"..settings.flood.."\n🔸$Flood sensitivity >> #"..NUM_MSG_MAX.."\n🔹$Lock Spam >> #"..settings.lock_spam.."\n🔸$Lock Contacts >> #"..settings.lock_contacts.."\n🔹$Lock Arabic/Persian >> #"..settings.lock_arabic.."\n🔸$Lock Member >> #"..settings.lock_member.."\n🔹$Lock RTL >> #"..settings.lock_rtl.."\n🔸$Lock Forward >> #"..settings.lock_fwd.."\n🔹$Lock TGservice >> #"..settings.lock_tgservice.."\n🔸$Lock Sticker >> #"..settings.lock_sticker.."\n🔹$Public >> #"..settings.public.."\n🔸$Strict Settings >> #"..settings.strict
+  local text = "💠#SuperGroup #Settings💠:\n➖➖➖➖➖➖➖➖\n🔸$Bot Name >> #Terminator 4.0 \n🔹$Lock Links >> #"..settings.lock_link.."\n🔸$Lock Webpage >> #"..settings.lock_webpage.."\n🔹$Lock Tag >> #"..settings.lock_tag.."\n🔸$Lock Emoji >> #"..settings.lock_emoji.."\n🔹$Lock English >> #"..settings.lock_eng.."\n🔸$Lock Badword >> #"..settings.lock_badw.."\n🔹$Lock Flood >> #"..settings.flood.."\n🔸$Flood sensitivity >> #"..NUM_MSG_MAX.."\n🔹$Lock Spam >> #"..settings.lock_spam.."\n🔸$Lock Contacts >> #"..settings.lock_contacts.."\n🔹$Lock Arabic/Persian >> #"..settings.lock_arabic.."\n🔸$Lock Member >> #"..settings.lock_member.."\n🔹$Lock RTL >> #"..settings.lock_rtl.."\n🔸$Lock Forward >> #"..settings.lock_fwd.."\n🔹$Lock TGservice >> #"..settings.lock_tgservice.."\n🔸$Lock Sticker >> #"..settings.lock_sticker.."\n🔹$Public >> #"..settings.public.."\n🔸$Strict Settings >> #"..settings.strict
   reply_msg(msg.id, text, ok_cb, false)
 end
 

@@ -1,13 +1,15 @@
 --[[
-|------------------------------------------------- |--------- ______-----------------_______---|
-|   ______   __   ______    _____     _____    __  |  _____  |  ____|  __     __    /  _____/  |
-|  |__  __| |  | |__  __|  /     \   |     \  |  | | |__   | | |____  |  |   |  |  /  /____    |
-|    |  |   |  |   |  |   /  /_\  \  |  |\  \ |  | |   /  /  |  ____| |  |   |  |  \____   /   |
-|    |  |   |  |   |  |  /  _____  \ |  | \  \|  | |  /  /_  | |____  |  |___|  |   ___/  /    |
-|    |__|   |__|   |__| /__/     \__\|__|  \_____| | |_____| |______|  \_______/  /______/     |
-|--------------------------------------------------|-------------------------------------------|
-| This Project Powered by : Pouya Poorrahman CopyRight 2016 Jove Version 4.0 Anti Spam Cli Bot |
-|----------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------|
+|   ######## ######## ########  ##     ## #### ##    ##    ###    ########  #######  ########     |
+|      ##    ##       ##     ## ###   ###  ##  ###   ##   ## ##      ##    ##     ## ##     ##    |
+|      ##    ##       ##     ## #### ####  ##  ####  ##  ##   ##     ##    ##     ## ##     ##    |
+|      ##    ######   ########  ## ### ##  ##  ## ## ## ##     ##    ##    ##     ## ########     |
+|      ##    ##       ##   ##   ##     ##  ##  ##  #### #########    ##    ##     ## ##   ##      |
+|      ##    ##       ##    ##  ##     ##  ##  ##   ### ##     ##    ##    ##     ## ##    ##     |
+|      ##    ######## ##     ## ##     ## #### ##    ## ##     ##    ##     #######  ##     ##    |
+|-------------------------------------------------------------------------------------------------|
+| This Project Powered by : Rahman Rahimi CopyRight 2016 Terminator Version 4.0 Anti Spam Cli Bot |
+|-------------------------------------------------------------------------------------------------|
 ]]
 local function pre_process(msg)
 local to = msg.to.type
@@ -97,7 +99,7 @@ local service = msg.service
 local name_log = user_print_name(msg.from)
 if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel" then
 	if is_gbanned(msg.from.id) then
-        return '*You are globally banned.\n For More Informaion Send msg to @JoveTGBot'
+        return '*You are globally banned.\n For More Informaion Send msg to @TerminatorTG'
 	end
     if matches[1] == 'join' then
 	local data = load_data(_config.moderation.data)
@@ -219,7 +221,7 @@ if to == 'user' or service or is_admin1(msg) and to == "chat" or to == "channel"
 
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
-		text = "Welcome to Jove!\n\n>To get a new Jove group, Use /support command to get a support Link! Or Contact a Support Team With @JoveTGBot\n\nFor more information, check out our channel:\n[@JoveCH] \n\nUse #superhelp command to show bot commands!!\n\n#Thanks_for_using @JoveTG!"
+		text = "✨به ترمیناتور خوش آمدید✨\n\nاینجا پیوی رباته اگه کاری داری دارید می توانید با مدیران ربات زیر پیام خودتونو ارسال کنید تا به شما جواب بدهند.\n\n ✨@Tr1_FRHT_Tr1✨\n ✨@Tr2_FRHT_Tr2✨\n ✨@Tr3_FRHT_Tr3✨\n\n ✨با تشکر تیم کریتوس✨"
      	return text
     end
 

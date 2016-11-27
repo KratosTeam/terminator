@@ -1,13 +1,15 @@
 --[[
-|------------------------------------------------- |--------- ______-----------------_______---|
-|   ______   __   ______    _____     _____    __  |  _____  |  ____|  __     __    /  _____/  |
-|  |__  __| |  | |__  __|  /     \   |     \  |  | | |__   | | |____  |  |   |  |  /  /____    |
-|    |  |   |  |   |  |   /  /_\  \  |  |\  \ |  | |   /  /  |  ____| |  |   |  |  \____   /   |
-|    |  |   |  |   |  |  /  _____  \ |  | \  \|  | |  /  /_  | |____  |  |___|  |   ___/  /    |
-|    |__|   |__|   |__| /__/     \__\|__|  \_____| | |_____| |______|  \_______/  /______/     |
-|--------------------------------------------------|-------------------------------------------|
-| This Project Powered by : Pouya Poorrahman CopyRight 2016 Jove Version 4.0 Anti Spam Cli Bot |
-|----------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------|
+|   ######## ######## ########  ##     ## #### ##    ##    ###    ########  #######  ########     |
+|      ##    ##       ##     ## ###   ###  ##  ###   ##   ## ##      ##    ##     ## ##     ##    |
+|      ##    ##       ##     ## #### ####  ##  ####  ##  ##   ##     ##    ##     ## ##     ##    |
+|      ##    ######   ########  ## ### ##  ##  ## ## ## ##     ##    ##    ##     ## ########     |
+|      ##    ##       ##   ##   ##     ##  ##  ##  #### #########    ##    ##     ## ##   ##      |
+|      ##    ##       ##    ##  ##     ##  ##  ##   ### ##     ##    ##    ##     ## ##    ##     |
+|      ##    ######## ##     ## ##     ## #### ##    ## ##     ##    ##     #######  ##     ##    |
+|-------------------------------------------------------------------------------------------------|
+| This Project Powered by : Rahman Rahimi CopyRight 2016 Terminator Version 4.0 Anti Spam Cli Bot |
+|-------------------------------------------------------------------------------------------------|
 ]]
 local function pre_process(msg)
   local data = load_data(_config.moderation.data)
@@ -129,8 +131,8 @@ local function banall_by_reply(extra, success, result)
 		return
 	end
 		banall_user(result.from.peer_id)
-		send_large_msg(chat, "💠کاربر "..result.from.peer_id.." در ژوپیتر گولبال بن شد💠")
-		send_large_msg(channel, "💠کاربر "..result.from.peer_id.." در ژوپیتر گولبال بن شد💠")
+		send_large_msg(chat, "💠کاربر "..result.from.peer_id.." در ترمیناتور گولبال بن شد💠")
+		send_large_msg(channel, "💠کاربر "..result.from.peer_id.." در ترمیناتور گولبال بن شد💠")
 	else
 		return
 	end
@@ -147,8 +149,8 @@ local function unbanall_by_reply(extra, success, result)
 		return
 	end
 		unbanall_user(result.from.peer_id)
-		send_large_msg(chat, "💠کاربر "..result.from.peer_id.." در ژوپیتر ازلیست گولبال بن درامد💠")
-		send_large_msg(channel, "💠کاربر "..result.from.peer_id.." در ژوپیتر ازلیست گولبال بن در امد💠")
+		send_large_msg(chat, "💠کاربر "..result.from.peer_id.." در ترمیناتور ازلیست گولبال بن درامد💠")
+		send_large_msg(channel, "💠کاربر "..result.from.peer_id.." در ترمیناتور ازلیست گولبال بن در امد💠")
 	else
 		return
 	end
@@ -212,10 +214,10 @@ local function kick_ban_res(extra, success, result)
         redis:srem(hash, member_id)
         return '💠کاربر '..user_id..' انبن شد💠'
       elseif get_cmd == 'banall' then
-        send_large_msg(receiver, '💠کاربر @'..member..' ['..member_id..'] درژوپیتر گولبال بن شد💠')
+        send_large_msg(receiver, '💠کاربر @'..member..' ['..member_id..'] درترمیناتور گولبال بن شد💠')
 		banall_user(member_id)
       elseif get_cmd == 'unbanall' then
-        send_large_msg(receiver, '💠کاربر @'..member..' ['..member_id..'] در ژوپتیر انبن ال شد💠')
+        send_large_msg(receiver, '💠کاربر @'..member..' ['..member_id..'] در ترمیناتور انبن ال شد💠')
 	    unbanall_user(member_id)
     end
 end
@@ -410,7 +412,7 @@ if matches[1]:lower() == 'انبن' then-- /ban
 		local receiver = get_receiver(msg)
         savelog(msg.to.id, name.." ["..msg.from.id.."] banedall user ".. matches[2])
         banall_user(matches[2])
-		send_large_msg(receiver, '💠کاربر ['..matches[2]..'] در ژوپیتر گولبال بن شد💠')
+		send_large_msg(receiver, '💠کاربر ['..matches[2]..'] در ترمیناتور گولبال بن شد💠')
       else
 		local cbres_extra = {
 		chat_id = msg.to.id,
@@ -445,7 +447,7 @@ if matches[1]:lower() == 'انبن' then-- /ban
 		local receiver = get_receiver(msg)
         savelog(msg.to.id, name.." ["..msg.from.id.."] unbanedall user ".. matches[2])
         unbanall_user(matches[2])
-		send_large_msg(receiver, '💠کاربر ['..matches[2]..'] درژوپیتر ازگولبال بن ازادشد💠')
+		send_large_msg(receiver, '💠کاربر ['..matches[2]..'] در ترمیناتور از گولبال بن ازاد شد💠')
       else
 		local cbres_extra = {
 		chat_id = msg.to.id,

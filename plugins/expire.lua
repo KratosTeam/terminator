@@ -1,13 +1,15 @@
 --[[
-|------------------------------------------------- |--------- ______-----------------_______---|
-|   ______   __   ______    _____     _____    __  |  _____  |  ____|  __     __    /  _____/  |
-|  |__  __| |  | |__  __|  /     \   |     \  |  | | |__   | | |____  |  |   |  |  /  /____    |
-|    |  |   |  |   |  |   /  /_\  \  |  |\  \ |  | |   /  /  |  ____| |  |   |  |  \____   /   |
-|    |  |   |  |   |  |  /  _____  \ |  | \  \|  | |  /  /_  | |____  |  |___|  |   ___/  /    |
-|    |__|   |__|   |__| /__/     \__\|__|  \_____| | |_____| |______|  \_______/  /______/     |
-|--------------------------------------------------|-------------------------------------------|
-| This Project Powered by : Pouya Poorrahman CopyRight 2016 Jove Version 4.0 Anti Spam Cli Bot |
-|----------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------|
+|   ######## ######## ########  ##     ## #### ##    ##    ###    ########  #######  ########     |
+|      ##    ##       ##     ## ###   ###  ##  ###   ##   ## ##      ##    ##     ## ##     ##    |
+|      ##    ##       ##     ## #### ####  ##  ####  ##  ##   ##     ##    ##     ## ##     ##    |
+|      ##    ######   ########  ## ### ##  ##  ## ## ## ##     ##    ##    ##     ## ########     |
+|      ##    ##       ##   ##   ##     ##  ##  ##  #### #########    ##    ##     ## ##   ##      |
+|      ##    ##       ##    ##  ##     ##  ##  ##   ### ##     ##    ##    ##     ## ##    ##     |
+|      ##    ######## ##     ## ##     ## #### ##    ## ##     ##    ##     #######  ##     ##    |
+|-------------------------------------------------------------------------------------------------|
+| This Project Powered by : Rahman Rahimi CopyRight 2016 Terminator Version 4.0 Anti Spam Cli Bot |
+|-------------------------------------------------------------------------------------------------|
 ]]
 local function check_member_superrem2(cb_extra, success, result)
   local receiver = cb_extra.receiver
@@ -55,32 +57,32 @@ local function pre_process(msg)
 	end
 	if tonumber(timetoexpire) == 0 then
 		if redis:hget('expires0',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '0 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید\nربات جهت تمدید: @JoveTGBot')
+		send_large_msg(get_receiver(msg), '0 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید')
 		redis:hset('expires0',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 1 then
 		if redis:hget('expires1',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '1 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید\nربات جهت تمدید: @JoveTGBot')
+		send_large_msg(get_receiver(msg), '1 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید')
 		redis:hset('expires1',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 2 then
 		if redis:hget('expires2',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '2 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید\nربات جهت تمدید: @JoveTGBot')
+		send_large_msg(get_receiver(msg), '2 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید')
 		redis:hset('expires2',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 3 then
 		if redis:hget('expires3',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '3 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید\nربات جهت تمدید: @JoveTGBot')
+		send_large_msg(get_receiver(msg), '3 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید')
 		redis:hset('expires3',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 4 then
 		if redis:hget('expires4',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '4 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید\nربات جهت تمدید: @JoveTGBot')
+		send_large_msg(get_receiver(msg), '4 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید')
 		redis:hset('expires4',msg.to.id,'5')
 	end
 	if tonumber(timetoexpire) == 5 then
 		if redis:hget('expires5',msg.to.id) then return msg end
-		send_large_msg(get_receiver(msg), '5 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید\nربات جهت تمدید: @JoveTGBot')
+		send_large_msg(get_receiver(msg), '5 روز تا پایان تاریخ انقضای گروه باقی مانده است\nنسبت به تمدید اقدام کنید')
 		redis:hset('expires5',msg.to.id,'5')
 	end
 end

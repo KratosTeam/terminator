@@ -1,13 +1,15 @@
 --[[
-|------------------------------------------------- |--------- ______-----------------_______---|
-|   ______   __   ______    _____     _____    __  |  _____  |  ____|  __     __    /  _____/  |
-|  |__  __| |  | |__  __|  /     \   |     \  |  | | |__   | | |____  |  |   |  |  /  /____    |
-|    |  |   |  |   |  |   /  /_\  \  |  |\  \ |  | |   /  /  |  ____| |  |   |  |  \____   /   |
-|    |  |   |  |   |  |  /  _____  \ |  | \  \|  | |  /  /_  | |____  |  |___|  |   ___/  /    |
-|    |__|   |__|   |__| /__/     \__\|__|  \_____| | |_____| |______|  \_______/  /______/     |
-|--------------------------------------------------|-------------------------------------------|
-| This Project Powered by : Pouya Poorrahman CopyRight 2016 Jove Version 4.0 Anti Spam Cli Bot |
-|----------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------|
+|   ######## ######## ########  ##     ## #### ##    ##    ###    ########  #######  ########     |
+|      ##    ##       ##     ## ###   ###  ##  ###   ##   ## ##      ##    ##     ## ##     ##    |
+|      ##    ##       ##     ## #### ####  ##  ####  ##  ##   ##     ##    ##     ## ##     ##    |
+|      ##    ######   ########  ## ### ##  ##  ## ## ## ##     ##    ##    ##     ## ########     |
+|      ##    ##       ##   ##   ##     ##  ##  ##  #### #########    ##    ##     ## ##   ##      |
+|      ##    ##       ##    ##  ##     ##  ##  ##   ### ##     ##    ##    ##     ## ##    ##     |
+|      ##    ######## ##     ## ##     ## #### ##    ## ##     ##    ##     #######  ##     ##    |
+|-------------------------------------------------------------------------------------------------|
+| This Project Powered by : Rahman Rahimi CopyRight 2016 Terminator Version 4.0 Anti Spam Cli Bot |
+|-------------------------------------------------------------------------------------------------|
 ]]
 do
 
@@ -102,10 +104,10 @@ local function bot_stats()
   return text
 end
 local function run(msg, matches)
-  if matches[1]:lower() == 'jove' then -- Put everything you like :)
+  if matches[1]:lower() == 'terminator' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
-    savelog(msg.to.id, name.." ["..msg.from.id.."] used /jove ")
+    savelog(msg.to.id, name.." ["..msg.from.id.."] used /terminator ")
     return about
   end 
   if matches[1]:lower() == "statslist" then
@@ -132,7 +134,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "jove" then -- Put everything you like :)
+    if matches[2] == "terminator" then -- Put everything you like :)
       if not is_admin1(msg) then
         return "For admins only !"
       else
@@ -154,13 +156,13 @@ return {
     "^[#!/]([Ss]tats)$",
     "^[#!/]([Ss]tatslist)$",
     "^[#!/]([Ss]tats) (group) (%d+)",
-    "^[#!/]([Ss]tats) (jove)",
+    "^[#!/]([Ss]tats) (terminator)",
     "^([Ss]tats)$",
     "^([Ss]tatslist)$",
     "^([Ss]tats) (group) (%d+)",
-    "^([Ss]tats) (jove)",
+    "^([Ss]tats) (terminator)",
     }, 
   run = run
 }
 end
---Jove V3.1
+--Terminator V3.1
